@@ -14,3 +14,42 @@ a {
 * {
   box-sizing: border-box;
 }
+
+img.wp-smiley,
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 0.07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
+.woocommerce form .form-row .required {
+  visibility: visible;
+}
+
+:root {
+  --font-heading: "Comfortaa", cursive;
+  --font-text: "Inter", sans-serif;
+  --e-global-color-lprimary1: #3078db !important;
+  --e-global-color-lprimary2: #468ae7 !important;
+}
+
+.listivo-styled-list li:before {
+  content: url("data:image/svg+xml; utf8,<svg xmlns='http://www.w3.org/2000/svg' width='13px' viewBox='0 0 121.000000 121.000000' preserveAspectRatio='xMidYMid meet'><g transform='translate(0.000000,121.000000) scale(0.100000,-0.100000)' fill='%233078DB' stroke='none'><path d='M1127 1196 c-3 -8 -23 -18 -44 -21 -21 -3 -67 -14 -103 -25 -124 -35 -185 -51 -240 -64 -30 -7 -71 -18 -90 -24 -40 -13 -128 -37 -210 -56 -30 -7 -77 -21 -103 -30 -26 -9 -57 -16 -67 -16 -11 0 -46 -9 -77 -19 -32 -11 -76 -22 -98 -26 -46 -8 -65 -21 -65 -44 0 -21 820 -841 841 -841 23 0 36 19 44 65 4 22 15 66 26 98 10 31 19 66 19 77 0 10 7 41 16 67 9 26 23 73 30 103 19 82 43 170 56 210 6 19 17 60 24 90 13 55 29 116 64 240 11 36 22 82 25 103 3 21 13 41 21 44 9 3 14 19 14 44 0 39 0 39 -39 39 -25 0 -41 -5 -44 -14z m-78 -149 c11 -14 -1 -90 -32 -192 -19 -65 -35 -126 -51 -195 -7 -30 -20 -77 -29 -105 -20 -63 -44 -151 -62 -234 -15 -64 -38 -111 -55 -111 -12 0 -610 598 -610 610 0 17 47 40 111 55 83 18 171 42 234 62 28 9 75 22 105 29 70 16 131 32 195 52 48 14 148 38 171 41 6 0 17 -5 23 -12z '/></g></svg>");
+}
+
+header #listivo-menu>div>a {
+  color: white;
+}
+header .menu-item.listivo-menu__item a {
+  color: black;
+}
+
+.listivo-hero-search-v2__content {
+  max-width: 1024px;
+}
