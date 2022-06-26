@@ -4,6 +4,7 @@ import Categories from '../components/Categories'
 import Header from '../components/Header'
 import Search from '../components/Search'
 import Footer from '../components/Footer'
+import ListingForm from '../components/ListingForm'
 
 export default function Home() {
   return (
@@ -14,9 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Search />
-      <div style={{margin: "20px 0px"}}></div>
-      <Categories />
+      <ListingForm />
       <Footer />
     </div>
   )

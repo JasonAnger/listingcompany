@@ -1,5 +1,9 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
+import {useRouter} from 'next/router'
+
 export default function Header() {
-    return <header className="listivo-header listivo-header--with-submit-button listivo-header--with-dashboard-link">
+    const router = useRouter()
+    return <header className={router.asPath !== '/' ?"listivo-header listivo-header--with-submit-button listivo-header--with-dashboard-link not-home":"listivo-header listivo-header--with-submit-button listivo-header--with-dashboard-link"}>
     <div className="listivo-header__container">
         <div className="listivo-header__inner">
             <div className="listivo-hide-mobile listivo-hide-tablet">
@@ -8,14 +12,14 @@ export default function Header() {
                         <div className="listivo-menu__limit-width">
                             <div className="listivo-menu__left">
                                 <div className="listivo-logo">
-                                    <a href="https://demo2.listivotheme.com"
+                                    <a href="/"
                                         title="Listivo - Classified Ads WordPress Theme">
                                         <img src="https://demo2.listivotheme.com/wp-content/uploads/2021/11/logo-yellow-white-font-1.png"
                                             alt="Listivo - Classified Ads WordPress Theme" />
                                     </a>
                                 </div>
                                 <div className="listivo-logo listivo-logo--sticky">
-                                    <a href="https://demo2.listivotheme.com"
+                                    <a href="/"
                                         title="Listivo - Classified Ads WordPress Theme">
                                         <img src="https://demo2.listivotheme.com/wp-content/uploads/2021/11/logo-yellow-white-font-1.png"
                                             alt="Listivo - Classified Ads WordPress Theme" />
@@ -26,7 +30,7 @@ export default function Header() {
                                     <div id="listivo-menu" className="listivo-menu">
                                         <div id="listivo-menu-element-menu-item-1-5293"
                                             className="listivo-home-menu-link menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5039 current_page_item menu-item-5293 listivo-menu-item listivo-menu__item listivo-menu-item-depth-0 listivo-menu__item--depth-0">
-                                            <a href="https://demo2.listivotheme.com/" title="Home"
+                                            <a href="/" title="Home"
                                                 className="listivo-menu__link">
                                                 Home </a>
                                         </div>
@@ -58,13 +62,13 @@ export default function Header() {
                                                 className="listivo-submenu listivo-submenu--level-0 listivo-menu__submenu listivo-menu__submenu--0">
                                                 <div id="listivo-menu-element-menu-item-1-1742"
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-1742 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                    <a href="https://demo2.listivotheme.com/listings/"
+                                                    <a href="/listings/"
                                                         title="Classic Search" className="listivo-menu__link">
                                                         Classic Search </a>
                                                 </div>
                                                 <div id="listivo-menu-element-menu-item-1-2445"
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2445 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                    <a href="https://demo2.listivotheme.com/map-search/"
+                                                    <a href="/map-search/"
                                                         title="Map Search" className="listivo-menu__link">
                                                         Map Search </a>
                                                 </div>
@@ -78,19 +82,19 @@ export default function Header() {
                                                 className="listivo-submenu listivo-submenu--level-0 listivo-menu__submenu listivo-menu__submenu--0">
                                                 <div id="listivo-menu-element-menu-item-1-2205"
                                                     className="menu-item menu-item-type-post_type menu-item-object-listivo_listing menu-item-2205 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                    <a href="https://demo2.listivotheme.com/listing/google-pixel-4a-5g/"
+                                                    <a href="/listing/google-pixel-4a-5g/"
                                                         title="Style: Gallery" className="listivo-menu__link">
                                                         Style: Gallery </a>
                                                 </div>
                                                 <div id="listivo-menu-element-menu-item-1-2203"
                                                     className="menu-item menu-item-type-post_type menu-item-object-listivo_listing menu-item-2203 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                    <a href="https://demo2.listivotheme.com/listing/summer-house/"
+                                                    <a href="/listing/summer-house/"
                                                         title="Style: Carousel" className="listivo-menu__link">
                                                         Style: Carousel </a>
                                                 </div>
                                                 <div id="listivo-menu-element-menu-item-1-2202"
                                                     className="menu-item menu-item-type-post_type menu-item-object-listivo_listing menu-item-2202 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                    <a href="https://demo2.listivotheme.com/listing/auto-detailing/"
+                                                    <a href="/listing/auto-detailing/"
                                                         title="Style: Mosaic" className="listivo-menu__link">
                                                         Style: Mosaic </a>
                                                 </div>
@@ -104,20 +108,20 @@ export default function Header() {
                                                 className="listivo-submenu listivo-submenu--level-0 listivo-menu__submenu listivo-menu__submenu--0">
                                                 <div id="listivo-menu-element-menu-item-1-1736"
                                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1736 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                    <a href="https://demo2.listivotheme.com/blog/" title="Blog"
+                                                    <a href="/blog/" title="Blog"
                                                         className="listivo-menu__link">
                                                         Blog </a>
                                                     <div
                                                         className="listivo-submenu listivo-submenu--level-1 listivo-menu__submenu listivo-menu__submenu--1">
                                                         <div id="listivo-menu-element-menu-item-1-1737"
                                                             className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737 listivo-menu-item listivo-menu__item listivo-menu-item-depth-2 listivo-menu__item--depth-2">
-                                                            <a href="https://demo2.listivotheme.com/blog/" title="Blog"
+                                                            <a href="/blog/" title="Blog"
                                                                 className="listivo-menu__link">
                                                                 Blog </a>
                                                         </div>
                                                         <div id="listivo-menu-element-menu-item-1-478"
                                                             className="menu-item menu-item-type-post_type menu-item-object-post menu-item-478 listivo-menu-item listivo-menu__item listivo-menu-item-depth-2 listivo-menu__item--depth-2">
-                                                            <a href="https://demo2.listivotheme.com/best-holiday-gift-ideas-for-2021/"
+                                                            <a href="/best-holiday-gift-ideas-for-2021/"
                                                                 title="Single Post" className="listivo-menu__link">
                                                                 Single Post </a>
                                                         </div>
@@ -125,25 +129,25 @@ export default function Header() {
                                                 </div>
                                                 <div id="listivo-menu-element-menu-item-1-865"
                                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-865 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                    <a href="https://demo2.listivotheme.com/about/" title="About Us"
+                                                    <a href="/about/" title="About Us"
                                                         className="listivo-menu__link">
                                                         About Us </a>
                                                 </div>
                                                 <div id="listivo-menu-element-menu-item-1-474"
                                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-474 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                    <a href="https://demo2.listivotheme.com/contact/" title="Contact Us"
+                                                    <a href="/contact/" title="Contact Us"
                                                         className="listivo-menu__link">
                                                         Contact Us </a>
                                                 </div>
                                                 <div id="listivo-menu-element-menu-item-1-1672"
                                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1672 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                    <a href="https://demo2.listivotheme.com/login-register/"
+                                                    <a href="/login-register/"
                                                         title="Login / Register" className="listivo-menu__link">
                                                         Login / Register </a>
                                                 </div>
                                                 <div id="listivo-menu-element-menu-item-1-898"
                                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-898 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                    <a href="https://demo2.listivotheme.com/our-team/" title="Our Team"
+                                                    <a href="/our-team/" title="Our Team"
                                                         className="listivo-menu__link">
                                                         Our Team </a>
                                                 </div>
@@ -155,13 +159,13 @@ export default function Header() {
                                                 </div>
                                                 <div id="listivo-menu-element-menu-item-1-856"
                                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-856 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                    <a href="https://demo2.listivotheme.com/faq/" title="FAQ"
+                                                    <a href="/faq/" title="FAQ"
                                                         className="listivo-menu__link">
                                                         FAQ </a>
                                                 </div>
                                                 <div id="listivo-menu-element-menu-item-1-1673"
                                                     className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1673 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                    <a href="https://demo2.listivotheme.com/page-404/" title="Page 404"
+                                                    <a href="/page-404/" title="Page 404"
                                                         className="listivo-menu__link">
                                                         Page 404 </a>
                                                 </div>
@@ -169,27 +173,27 @@ export default function Header() {
                                         </div>
                                         <div id="listivo-menu-element-menu-item-1-5272"
                                             className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5272 listivo-menu-item listivo-menu__item listivo-menu-item-depth-0 listivo-menu__item--depth-0">
-                                            <a href="#" title="More" className="listivo-menu__link" target="_blank">
+                                            <a href="#" title="More" className="listivo-menu__link" target="_blank" rel="noreferrer" >
                                                 More </a>
                                             <div
                                                 className="listivo-submenu listivo-submenu--level-0 listivo-menu__submenu listivo-menu__submenu--0">
                                                 <div id="listivo-menu-element-menu-item-1-5273"
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5273 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
                                                     <a href="https://support.listivotheme.com/" title="Help Center"
-                                                        className="listivo-menu__link" target="_blank">
+                                                        className="listivo-menu__link" target="_blank" rel="noreferrer" >
                                                         Help Center </a>
                                                 </div>
                                                 <div id="listivo-menu-element-menu-item-1-5274"
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5274 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
                                                     <a href="https://support.listivotheme.com/support/solutions/articles/101000373828"
                                                         title="Refund Policy" className="listivo-menu__link"
-                                                        target="_blank">
+                                                        target="_blank" rel="noreferrer" >
                                                         Refund Policy </a>
                                                 </div>
                                                 <div id="listivo-menu-element-menu-item-1-5275"
                                                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5275 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
                                                     <a href="https://listivotheme.com/try-free-demo-2" title="Free Demo"
-                                                        className="listivo-menu__link" target="_blank">
+                                                        className="listivo-menu__link" target="_blank" rel="noreferrer" >
                                                         Free Demo </a>
                                                 </div>
                                                 <div id="listivo-menu-element-menu-item-1-5276"
@@ -212,7 +216,7 @@ export default function Header() {
                                         </path>
                                     </svg>
                                     <div className="listivo-menu-item-depth-0">
-                                        <a href="https://demo2.listivotheme.com/login-register/?tab=login">
+                                        <a href="/login-register/?tab=login">
                                             <span
                                                 className="listivo-menu-desktop-login-register-link__login-text listivo-menu-item-depth-0">
                                                 Log In </span>
@@ -220,7 +224,7 @@ export default function Header() {
                                     </div>
                                     <span className="listivo-menu-desktop-login-register-link__separator"></span>
                                     <div className="listivo-menu-item-depth-0">
-                                        <a href="https://demo2.listivotheme.com/login-register/?tab=register">
+                                        <a href="/login-register/?tab=register">
                                             <span
                                                 className="listivo-menu-desktop-login-register-link__register-text listivo-menu-item-depth-0">
                                                 Register </span>
@@ -228,7 +232,7 @@ export default function Header() {
                                     </div>
                                 </div>
                                 <a className="listivo-primary-button listivo-primary-button--icon listivo-button--menu-submit"
-                                    href="https://demo2.listivotheme.com/panel/create/">
+                                    href="/add-listing">
                                     <span className="listivo-primary-button__text">
                                         Add Listing </span>
                                     <span className="listivo-primary-button__icon">
@@ -262,7 +266,7 @@ export default function Header() {
                                 <div className="listivo-mobile-menu__open__content">
                                     <div className="listivo-mobile-menu__open__top">
                                         <div className="listivo-mobile-menu__open__top__submit-button"><a
-                                                href="https://demo2.listivotheme.com/panel/create/"
+                                                href="/panel/create/"
                                                 className="listivo-primary-button listivo-primary-button--icon"><span
                                                     className="listivo-primary-button__text">
                                                     Add Listing </span> <span className="listivo-primary-button__icon"><svg
@@ -287,7 +291,7 @@ export default function Header() {
                                         <div id="listivo-menu-mobile" className="listivo-menu">
                                             <div id="listivo-menu-element-menu-item-2-5293"
                                                 className="listivo-home-menu-link menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-5039 current_page_item menu-item-5293 listivo-menu-item listivo-menu__item listivo-menu-item-depth-0 listivo-menu__item--depth-0">
-                                                <a href="https://demo2.listivotheme.com/" title="Home"
+                                                <a href="/" title="Home"
                                                     className="listivo-menu__link">
                                                     Home </a></div>
                                             <div id="listivo-menu-element-menu-item-2-5255"
@@ -316,12 +320,12 @@ export default function Header() {
                                                     className="listivo-submenu listivo-submenu--level-0 listivo-menu__submenu listivo-menu__submenu--0">
                                                     <div id="listivo-menu-element-menu-item-2-1742"
                                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-1742 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                        <a href="https://demo2.listivotheme.com/listings/"
+                                                        <a href="/listings/"
                                                             title="Classic Search" className="listivo-menu__link">
                                                             Classic Search </a></div>
                                                     <div id="listivo-menu-element-menu-item-2-2445"
                                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2445 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                        <a href="https://demo2.listivotheme.com/map-search/"
+                                                        <a href="/map-search/"
                                                             title="Map Search" className="listivo-menu__link">
                                                             Map Search </a></div>
                                                 </div>
@@ -334,17 +338,17 @@ export default function Header() {
                                                     className="listivo-submenu listivo-submenu--level-0 listivo-menu__submenu listivo-menu__submenu--0">
                                                     <div id="listivo-menu-element-menu-item-2-2205"
                                                         className="menu-item menu-item-type-post_type menu-item-object-listivo_listing menu-item-2205 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                        <a href="https://demo2.listivotheme.com/listing/google-pixel-4a-5g/"
+                                                        <a href="/listing/google-pixel-4a-5g/"
                                                             title="Style: Gallery" className="listivo-menu__link">
                                                             Style: Gallery </a></div>
                                                     <div id="listivo-menu-element-menu-item-2-2203"
                                                         className="menu-item menu-item-type-post_type menu-item-object-listivo_listing menu-item-2203 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                        <a href="https://demo2.listivotheme.com/listing/summer-house/"
+                                                        <a href="/listing/summer-house/"
                                                             title="Style: Carousel" className="listivo-menu__link">
                                                             Style: Carousel </a></div>
                                                     <div id="listivo-menu-element-menu-item-2-2202"
                                                         className="menu-item menu-item-type-post_type menu-item-object-listivo_listing menu-item-2202 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                        <a href="https://demo2.listivotheme.com/listing/auto-detailing/"
+                                                        <a href="/listing/auto-detailing/"
                                                             title="Style: Mosaic" className="listivo-menu__link">
                                                             Style: Mosaic </a></div>
                                                 </div>
@@ -357,41 +361,41 @@ export default function Header() {
                                                     className="listivo-submenu listivo-submenu--level-0 listivo-menu__submenu listivo-menu__submenu--0">
                                                     <div id="listivo-menu-element-menu-item-2-1736"
                                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1736 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                        <a href="https://demo2.listivotheme.com/blog/" title="Blog"
+                                                        <a href="/blog/" title="Blog"
                                                             className="listivo-menu__link">
                                                             Blog </a>
                                                         <div
                                                             className="listivo-submenu listivo-submenu--level-1 listivo-menu__submenu listivo-menu__submenu--1">
                                                             <div id="listivo-menu-element-menu-item-2-1737"
                                                                 className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1737 listivo-menu-item listivo-menu__item listivo-menu-item-depth-2 listivo-menu__item--depth-2">
-                                                                <a href="https://demo2.listivotheme.com/blog/"
+                                                                <a href="/blog/"
                                                                     title="Blog" className="listivo-menu__link">
                                                                     Blog </a></div>
                                                             <div id="listivo-menu-element-menu-item-2-478"
                                                                 className="menu-item menu-item-type-post_type menu-item-object-post menu-item-478 listivo-menu-item listivo-menu__item listivo-menu-item-depth-2 listivo-menu__item--depth-2">
-                                                                <a href="https://demo2.listivotheme.com/best-holiday-gift-ideas-for-2021/"
+                                                                <a href="/best-holiday-gift-ideas-for-2021/"
                                                                     title="Single Post" className="listivo-menu__link">
                                                                     Single Post </a></div>
                                                         </div>
                                                     </div>
                                                     <div id="listivo-menu-element-menu-item-2-865"
                                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-865 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                        <a href="https://demo2.listivotheme.com/about/" title="About Us"
+                                                        <a href="/about/" title="About Us"
                                                             className="listivo-menu__link">
                                                             About Us </a></div>
                                                     <div id="listivo-menu-element-menu-item-2-474"
                                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-474 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                        <a href="https://demo2.listivotheme.com/contact/"
+                                                        <a href="/contact/"
                                                             title="Contact Us" className="listivo-menu__link">
                                                             Contact Us </a></div>
                                                     <div id="listivo-menu-element-menu-item-2-1672"
                                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1672 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                        <a href="https://demo2.listivotheme.com/login-register/"
+                                                        <a href="/login-register/"
                                                             title="Login / Register" className="listivo-menu__link">
                                                             Login / Register </a></div>
                                                     <div id="listivo-menu-element-menu-item-2-898"
                                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-898 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                        <a href="https://demo2.listivotheme.com/our-team/"
+                                                        <a href="/our-team/"
                                                             title="Our Team" className="listivo-menu__link">
                                                             Our Team </a></div>
                                                     <div id="listivo-menu-element-menu-item-2-494"
@@ -401,37 +405,37 @@ export default function Header() {
                                                             User Page </a></div>
                                                     <div id="listivo-menu-element-menu-item-2-856"
                                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-856 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                        <a href="https://demo2.listivotheme.com/faq/" title="FAQ"
+                                                        <a href="/faq/" title="FAQ"
                                                             className="listivo-menu__link">
                                                             FAQ </a></div>
                                                     <div id="listivo-menu-element-menu-item-2-1673"
                                                         className="menu-item menu-item-type-post_type menu-item-object-page menu-item-1673 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
-                                                        <a href="https://demo2.listivotheme.com/page-404/"
+                                                        <a href="/page-404/"
                                                             title="Page 404" className="listivo-menu__link">
                                                             Page 404 </a></div>
                                                 </div>
                                             </div>
                                             <div id="listivo-menu-element-menu-item-2-5272"
                                                 className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5272 listivo-menu-item listivo-menu__item listivo-menu-item-depth-0 listivo-menu__item--depth-0">
-                                                <a href="#" title="More" target="_blank" className="listivo-menu__link">
+                                                <a href="#" title="More" target="_blank" rel="noreferrer"  className="listivo-menu__link">
                                                     More </a>
                                                 <div
                                                     className="listivo-submenu listivo-submenu--level-0 listivo-menu__submenu listivo-menu__submenu--0">
                                                     <div id="listivo-menu-element-menu-item-2-5273"
                                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5273 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
                                                         <a href="https://support.listivotheme.com/" title="Help Center"
-                                                            target="_blank" className="listivo-menu__link">
+                                                            target="_blank" rel="noreferrer"  className="listivo-menu__link">
                                                             Help Center </a></div>
                                                     <div id="listivo-menu-element-menu-item-2-5274"
                                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5274 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
                                                         <a href="https://support.listivotheme.com/support/solutions/articles/101000373828"
-                                                            title="Refund Policy" target="_blank"
+                                                            title="Refund Policy" target="_blank" rel="noreferrer" 
                                                             className="listivo-menu__link">
                                                             Refund Policy </a></div>
                                                     <div id="listivo-menu-element-menu-item-2-5275"
                                                         className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5275 listivo-menu-item listivo-menu__item listivo-menu-item-depth-1 listivo-menu__item--depth-1">
                                                         <a href="https://listivotheme.com/try-free-demo-2"
-                                                            title="Free Demo" target="_blank"
+                                                            title="Free Demo" target="_blank" rel="noreferrer" 
                                                             className="listivo-menu__link">
                                                             Free Demo </a></div>
                                                     <div id="listivo-menu-element-menu-item-2-5276"
@@ -479,7 +483,7 @@ export default function Header() {
                         </div>
                     </div>
                     <div className="listivo-mobile-menu__login">
-                        <a className="listivo-user-icon-wrapper" href="https://demo2.listivotheme.com/panel/">
+                        <a className="listivo-user-icon-wrapper" href="/panel/">
                             <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="m437.019531 74.980469c-48.351562-48.351563-112.640625-74.980469-181.019531-74.980469s-132.667969 26.628906-181.019531 74.980469c-48.351563 48.351562-74.980469 112.640625-74.980469 181.019531s26.628906 132.667969 74.980469 181.019531c48.351562 48.351563 112.640625 74.980469 181.019531 74.980469s132.667969-26.628906 181.019531-74.980469c48.351563-48.351562 74.980469-112.640625 74.980469-181.019531s-26.628906-132.667969-74.980469-181.019531zm-325.914062 354.316406c8.453125-72.734375 70.988281-128.890625 144.894531-128.890625 38.960938 0 75.597656 15.179688 103.15625 42.734375 23.28125 23.285156 37.964844 53.6875 41.742188 86.152344-39.257813 32.878906-89.804688 52.707031-144.898438 52.707031s-105.636719-19.824219-144.894531-52.703125zm144.894531-159.789063c-42.871094 0-77.753906-34.882812-77.753906-77.753906 0-42.875 34.882812-77.753906 77.753906-77.753906s77.753906 34.878906 77.753906 77.753906c0 42.871094-34.882812 77.753906-77.753906 77.753906zm170.71875 134.425782c-7.644531-30.820313-23.585938-59.238282-46.351562-82.003906-18.4375-18.4375-40.25-32.269532-64.039063-40.9375 28.597656-19.394532 47.425781-52.160157 47.425781-89.238282 0-59.414062-48.339844-107.753906-107.753906-107.753906s-107.753906 48.339844-107.753906 107.753906c0 37.097656 18.84375 69.875 47.464844 89.265625-21.886719 7.976563-42.140626 20.308594-59.566407 36.542969-25.234375 23.5-42.757812 53.464844-50.882812 86.347656-34.410157-39.667968-55.261719-91.398437-55.261719-147.910156 0-124.617188 101.382812-226 226-226s226 101.382812 226 226c0 56.523438-20.859375 108.265625-55.28125 147.933594zm0 0">

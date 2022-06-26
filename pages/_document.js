@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-css-tags */
+/* eslint-disable @next/next/no-sync-scripts */
+
 import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
@@ -8,7 +11,7 @@ export default function Document() {
         <link rel='stylesheet' id='elementor-post-5228-css' href='https://demo2.listivotheme.com/wp-content/uploads/elementor/css/post-5228.css?ver=1652771888' type='text/css' media='all' />
         <link rel='stylesheet' id='elementor-post-57-css' href='https://demo2.listivotheme.com/wp-content/uploads/elementor/css/post-57.css?ver=1652771888' type='text/css' media='all' />
         <link rel='stylesheet' id='elementor-post-5039-css' href='https://demo2.listivotheme.com/wp-content/uploads/elementor/css/post-5039.css?ver=1652775308' type='text/css' media='all' />
-        <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="8d008926b9dfa883a58897cb-|49"></script><link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" id="contact-form-7" href="https://demo2.listivotheme.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.6" type="text/css" media="all" />
+        <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="8d008926b9dfa883a58897cb-|49"></script><link rel="stylesheet" id="contact-form-7" href="https://demo2.listivotheme.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.5.6" type="text/css" media="all" />
         <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="8d008926b9dfa883a58897cb-|49"></script>
         <link rel="stylesheet" id="elementor-icons-shared-0" href="/fontawesome/css/all.min.css" type="text/css" media="all" />
         <link rel='stylesheet' id='elementor-icons-fa-regular-css' href='https://demo2.listivotheme.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3' type='text/css' media='all' />
